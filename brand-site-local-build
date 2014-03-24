@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<title>Obed - A Name You Trust</title>
+
+		<meta http-quiv="Content-Type" content="A practice page" charset="utf-8"/>
+		<meta name="viewport" content="width=device-width"/>
+		<META name="robots" content="noindex, nofollow">
+
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="/obed/css/normalize.css">
+		<link rel="stylesheet" href="/obed/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/obed/css/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/obed/css//jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+		<style type="text/css">
+
+			body{
+
+				background-color: #efefef;
+				font-family: Courier New;
+				margin: 0 auto;
+
+			}
+
+			#wrapper{
+
+				width: 1024px;
+				margin: 0 auto;
+			}
+
+			header{
+
+				position: relative;
+			}
+
+			header{
+
+				max-width: 100%;
+				overflow: hidden;
+				width: 100%;
+				background-color: #efefef;
+			}
+
+			section{
+
+				margin: 0 auto;
+				width: 100%;
+				display: block;
+				text-align: center;
+
+			}
+
+			div{
+
+				width: 100%;
+
+			}
+
+			nav ul li {
+
+				display: inline-block;
+				float: right;
+				padding: 20px;
+			}
+
+			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+				
+				display: block;
+			}
+
+			ol, ul {
+
+				list-style: none;
+			}
+
+			a {
+
+				text-decoration: none;
+			}
+
+			img {
+
+				max-height: auto;
+				max-width: 150px;
+				position: center;
+				border: solid #fff;
+				clear: both;
+			}
+
+
+			#content {
+
+				display: block;
+				width: 100%;
+				padding: 25px 20px 0 0;
+				padding-bottom: 35px;
+			}
+
+			#pics { 
+
+				display: block; 
+				margin-bottom: 5px;
+			}
+
+			#pics ul li {
+
+				float: left;
+				margin-right: 26px;
+				margin-bottom: 12px;
+			}
+
+			/** clearfix **/
+			.clearfix:after { 
+
+				content: "."; 
+				display: block; 
+				clear: both; 
+				visibility: hidden; 
+				line-height: 0; 
+				height: 0; 
+			}
+			.clearfix { 
+
+				display: inline-block; 
+			}
+			.band {
+			  
+			  	display:block;
+			 	width:100%;
+			 	margin-top: 0;
+			 	padding:25px 20px 35px 0;
+
+			 }
+
+			#profile {
+
+				background-color: #1ABC9C;
+				font-size: 14px;
+				color: #fff;
+				display: block;
+				text-align: center;
+
+			}
+
+			#work {
+
+				background-color: #2C3E50;
+				font-size: 14px;
+				color: #fff;
+				display: block;
+				text-align: center;
+			}
+
+			#life {
+
+				background-color: #FED050;
+				font-size: 14px;
+				color: #fff;
+				display: block;
+				text-align: center;
+			}
+
+			#contact {
+
+				background-color: #FF0000;
+				font-size: 14px;
+				color: #fff;
+				display: block;
+				text-align: center;
+
+			}
+
+			#text{
+
+				font-size: 14px;
+				max-width: 300px;
+				text-align: left;
+			}
+
+			.back-to-top {
+
+				background: #FF4D4D;
+				bottom: 2%;
+				right: 0%;
+				padding: 0;
+				width: 40px;
+				text-align: center;
+				height: 50px;
+				opacity: 0.4;
+				color: #fff;
+				border: 0;
+				position: fixed;
+				-o-transition:0.3s;
+				-ms-transition:0.3s;
+				-moz-transition:0.3s;
+				-webkit-transition:0.3s;
+				transition:0.3s;
+			}
+
+			.back-to-top:hover {
+
+				opacity: 0.8;
+				-o-transition:0.3s;
+				-ms-transition:0.3s;
+				-moz-transition:0.3s;
+				-webkit-transition:0.3s;
+				transition:0.3s;
+			}
+			 
+
+			/** reset lightbox position **/
+			#lightbox-container-image-data-box {
+			  -webkit-box-sizing: content-box;
+			  -moz-box-sizing: content-box;
+			  box-sizing: content-box;
+			}
+
+			@media (max-width: 500px) {
+		     
+		      h1 {
+		        font-size: ;
+		      }
+		      li {
+		        display: block;
+		        padding: 5px;
+		      }
+		      
+		    }
+
+		</style>
+
+	</head>
+	<body>
+
+		<div id="wrapper">
+
+			<div>
+
+				<header>
+
+					<nav id="menu" role="navigation">
+
+						<ul>
+
+							<li><a href="#work">WORK</a></li>
+							<li><a href="#profile">PROFILE</a></li>
+							<!--<li><a href="#life">LIFE</a></li>-->
+							<li><a href="#contact">CONTACT</a></li>
+
+						</ul>
+
+					</nav>
+
+				</header>
+
+			</div>
+			<div class="band">
+
+				<section>
+
+					<h2>Hi, my name is Obed--I am Chemist turned Web Developer</h2>
+
+				</section>
+
+			</div>
+
+			<button class="back-to-top">^</button>
+
+			<a name="profile"/>
+			<div class="band" id="profile">
+
+				<section>
+
+					<img src="/obed/images/HeadShot.jpg">
+
+					<h4>WHO I AM</h4>
+
+				</section>
+				<section id="text">
+
+					Afer a lengthy amount of time as an extrovert in an introverts career path, I said goodbye to the lab and hello to the laptop. I'll always love the sciences but sallimae loves that I make my payments.
+
+				</section>
+
+
+			</div>
+			<!--<a name="life"/>
+			<div class="band" id="life">
+
+				<section>
+
+				
+
+				</section>
+				<section id="text">
+
+	
+				</section>
+
+			</div>-->
+			<a name="work"/>
+			<div class="band" id="work">
+
+				<div id="content">
+
+					<h4>WHAT I'VE DONE</h4>
+
+						<section id="text">
+
+							Click the images below to see some assignments I've completed. 
+
+						</section>
+
+						<div id="pics">
+
+							<ul class="clearfix"><!-- Anchor takes you to the doc / Img is the placeholder -->
+
+								<li><a class="fancybox" rel="group" href="/obed/images/whatiloveport.png"><img src="/obed/images/whatiloveport.png"></a></li>
+								<li><a class="fancybox" rel="group" href="/obed/images/whatiprotectport.png"><img src="/obed/images/whatiprotectport.png"></a></li>
+								<li><a class="fancybox" rel="group" href="http://google.com"><img src="/obed/images/CRport.png"></a></li>
+								<li><a class="fancybox" rel="group" href="/obed/images/GACert.png"><img src="/obed/images/GACert.png"></a></li>
+								<li><a class="fancybox" rel="group" href="/obed/images/RDR.png"><img src="/obed/images/RDR.png"></a></li>
+								<li><a class="fancybox" rel="group" href="/obed/images/NSA.jpg"><img src="/obed/images/NSA.jpg"></a></li>
+								<li><a class="fancybox" rel="group" href="/obed/images/Team.png"><img src="/obed/images/Team.png"></a></li>
+								<li><a class="fancybox" rel="group" href="/obed/images/Water.png"><img src="/obed/images/Water.png"></a></li>
+								<li><a class="fancybox" rel="group" href="/obed/images/Alexis.png"><img src="/obed/images/Alexis.png"></a></li>
+
+							</ul>
+
+						</div>
+
+				</div >
+
+
+			</div>
+			
+			<a name="contact"/>
+			<div class="band" id="contact">
+
+				<section>
+
+					<div>
+
+						<img src="/obed/images/HeadShot-2.jpg">
+
+
+					</div>
+
+					<div>
+
+						<h4>HOW TO REACH ME</h4>
+
+						Email: <a href="mailto:oampah@gmail.com" style="text-decoration: none; color: #fff;" target="_blank">Oampah@gmail.com</a><br/>
+						Twitter: <a href="https://twitter.com/OTAmpah" style="text-decoration: none; color: #fff;" target="_blank">OTAmpah</a><br/>
+						Linkedin: <a href="http://www.linkedin.com/in/obedampah" style="text-decoration: none; color: #fff;" target="_blank">Obed Ampah</a>
+
+					</div>
+
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<!-- Add fancyBox -->
+		<script type="text/javascript" src="/obed/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+
+		</script>
+
+
+		<!-- Add helpers - button, thumbnail and/or media -->
+		
+		<script type="text/javascript" src="/obed/js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript">
+
+			$(".fancybox").fancybox({
+ 		         helpers : {
+              		buttons: {
+                 		 position : 'top'
+             	 	}
+         		}
+      		});
+
+		</script>
+		<script type="text/javascript" src="/obed/js/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<script type="text/javascript" src="/obed/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+		
+
+		<!-- le javascript -->
+
+
+		<script type="text/javascript">
+
+			//Slow Scroll
+			$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			        || location.hostname == this.hostname) {
+
+			        var target = $(this.hash);
+			        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			           if (target.length) {
+			             $('html,body').animate({
+			                 scrollTop: target.offset().top
+			            }, 1000);
+			            return false;
+			        }
+			    }
+			});
+
+
+		</script>
+
+		<script type="text/javascript">
+            
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+
+		</script>
+
+		
+
+	</body>
+</html>
