@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta content="What I love welcoming email" />
+
+	</head>
+	<body style="color: #fff;">
+
+		<table border="0" cellpadding="0" cellspacing="0" style="margin:30px;width:600px;border:">
+
+			<tbody>
+
+				<tr>
+
+					<td>
+
+						<table border="0" cellpadding="" cellspacing="0" style="background:#fff;font-size:.9em; text-align: left;">
+
+							<tbody style="margin: 0 auto; padding: 10;">
+
+								<tr valign="top">
+
+									<td style="background:#000;" width="600">
+
+										<div><!-- Start Content -->
+
+											<a href="http://www.climaterealityproject.org" target="_blank"><img src="http://forms.climaterealityproject.org/page/-/photos/wilpng.png" style="float:left;"></a><a href="http://www.whatilove.org/#!/intro" target="_blank"><img src="http://forms.climaterealityproject.org/page/-/photos/wilpng2.png" style="float:right;"></a>
+
+											<img src="http://forms.climaterealityproject.org/page/-/photos/wilWelcome.png" style="width:100%;">
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+											Dear %%FIRSTNAME%%,</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												Thank you for signing up for What I Love - a Climate Reality Project initiative.</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												If you live in a sprawling city or a small mountain community ... whether you can't start the day without a coffee or never leave home without a water bottle ... if you always know what produce is in season or you sneak bacon into everything you cook, something you love is at risk.</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												You may have come to What I Love because you heard about it from a friend or loved one. Maybe you saw a trailer at a film festival, or perhaps you read about it in your local paper.</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												However you came across this new experience, we welcome you. We hope you enjoyed choosing the things you love - what we've called "building your canvas." And we also hope you took some time to explore how the things you love are being affected by increasing carbon pollution from fossil fuel emissions.</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												When creating this experience, we wanted to make sure every visitor would be able to learn more about how to protect what means most to them ... before it's too late.</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												And over the next few weeks, you'll find out how.</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												So, in the meantime, <strong>please add us to your address book so you don't miss a single important email about how to protect the things you love.</strong> And if you're a Gmail user, send us to your priority inbox by simply dragging this email to the "Priority" tab and selecting "Yes" when prompted.</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												Working together, we can protect the things we love.</p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; color:#fff;">
+												Thanks for joining us on this important endeavor,<br /><br />
+												<em>The What I Love Team</em></p>
+
+											<p style="font-family: Courier New, Arial, Helvetica; font-size: 14px; font-weight: normal; padding: 5px; color:#fff;">
+												P.S. Your friends and family should know how the things they love are being affected by carbon pollution too. <a href="http://www.whatilove.org" style="text-decoration:none; color:#487F00; font-weight:bold; border-bottom:1px dotted #487F00;">Please share this link on Facebook, Twitter, or simply via email</a> or word of mouth so more people can discover what they love, how it's at risk, and what can be done to stop it.</p>
+
+										</div><!-- End Content -->
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>
+
+										<table cellpadding="0" cellspacing="0" border="0" style="padding: 5px 0 0 0;">
+
+											<tr>
+
+												<td>
+
+													<a href="http://facebook.com/climatereality"><img src="http://forms.climaterealityproject.org/page/-/photos/fbsmpsd.png" alt="Twitter" border="0" style="padding: 0 5px 0 20px;" /></a>
+
+												</td>
+
+											
+												<td align="right">
+													<a href="http://twitter.com/climatereality"><img src="http://forms.climaterealityproject.org/page/-/photos/tsmpsd.png" alt="Facebook" border="0" style="border-left: thin solid #000; padding: 0 0 0 5px;"/></a>
+
+												</td>
+
+											</tr>
+
+										</table>
+
+									</td>
+
+								</tr>
+
+						</table>
+
+					</td>
+
+				</tr>
+
+				<tr><!-- Start Footer -->
+
+					<td style="text-align:center;">
+
+						<p style="color:#000;font-size:.7em;letter-spacing:1px;text-transform:uppercase;padding:20px 0;border-style: none;">
+							<a href="%%UNSUBSCRIBE%%?email=%%EMAIL%%" style="border-bottom:1px dotted #487F00;font-weight:bold;color:#487F00;text-decoration:none;border-style: none;">Click here</a> to unsubscribe.<br />
+
+							&copy;2012 The Climate Reality Project. All Rights Reserved.
+
+						</p>
+
+					</td>
+
+				</tr><!-- End Footer -->
+
+			</tbody>
+
+					</td>
+
+				</tr>
+
+			</tbody>
+
+		</table>
+
+	</body>
+
+</html>
