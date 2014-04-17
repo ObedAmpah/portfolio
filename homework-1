@@ -1,0 +1,31 @@
+/* Project Euler Problem 1
+ * 
+ * Multiples of 3 and 5
+ *
+ * If we list all the natural numbers below 10 that are multiples of 3 or 5 (3, 5, 6, 9), their sum is 23.
+ * Find the sum of all the multiples of 3 or 5 below 1000
+*/
+
+
+//Create the variable multiples and store a function in it
+var multiples = function () {
+
+	var multiplesArray = new Array(); //Create an array to store our values. This is the empty box; fill it.
+
+	for (var i = 0; i < 1000; i++) { //This is our loop for repeating the condition
+
+		if (i % 3 === 0 || i % 5 === 0) { //This is our condition
+			console.log(i);
+		multiplesArray.push(i); // Push method adds an element to an array; We are adding the values we have ammased to multiplesArray
+		}
+
+	}
+	return multiplesArray; //We return our Array values so that we can actually do something with them
+};
+
+
+var multipleSum2 = multiples(); //Create a new variable that will contain the multiples(); function 
+var sum = 0; //Start our count at 0
+for (var i = 0; i < multipleSum2.length; i++) { //This for loop will cycle through all elements within the array via the .length(); method for any elemtns that are available
+	sum += multipleSum2[i]; //The += operator counts all indices of the array and then adds them together
+}
