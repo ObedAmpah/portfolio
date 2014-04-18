@@ -1,0 +1,28 @@
+/*
+Chapter 2 -- the script element 
+examples file
+*/
+
+//Function sayHi cals the alert method and a pop up with the entered text
+	function sayHi(name) {
+
+		alert("Hi " + name + "!");
+	}
+
+//Do not call the closing script anywhere without escaping with \
+	function sayScript() {
+
+		alert("<\/script>");
+	}
+
+//Code to include JS/libraries into your work externally
+<script type="text/javascript" src="example.js"></script>
+
+//Place your script tags in the bottom of the page bc download, parsing and rendering take time 
+//Include most of your JS in an external, never on page if you can avoid it!
+
+//Always use curly brackets and code blocks for your control statements
+
+if (test) {
+	alert(test); //Be sure to end all statements with a semi-colon
+};
