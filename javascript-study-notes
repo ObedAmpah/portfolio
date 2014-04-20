@@ -26,3 +26,264 @@ examples file
 if (test) {
 	alert(test); //Be sure to end all statements with a semi-colon
 };
+
+/* Chapter 3: Language Basics */
+
+//A variable is just a name placeholder for a value
+
+var Num = 1;
+var endPoint = 0.5;
+var name = "Obed";
+var message;
+
+//Function that sends out a message -- This lacks the var operator so the message is global
+function test() {
+	message = "HI!";
+
+}
+test();
+alert (message);
+
+//Function that sends out a message -- This has the var operator so the variable message is local and cannot be called out of its scope
+function test() {
+	var message = "HI!";
+
+}
+test();
+alert (message);
+
+//There are a number of Data types
+String, Number, Boolean, Undefined, Null 
+
+//Never test for floating point values!
+
+if (var number === 0.13){} //BAD BAD BAD 
+
+//When testing  for number conversion, use parseInt--searches through a string and returns what is the integer value
+var num1 = parseInt("1234Blue"); //1234
+
+//Use the toString method to convert a value to a string
+var age = 11;
+var ageAsString = age.toString(); //The string is "11"
+
+//Prefix and Postfix crement operators
+var age = 29; 
+alert(++age);//Works before the variable and is the same as saying
+alert(age = age + 1 );
+
+//When False leads a comparison with the LOGICAL AND (&&) operand, it is always false
+var found = false;
+var result = (found && someUndeclaredValue); //Translates to FALSE && FALSE === FALSE -- This case is also true for OR ||
+alert(result);
+
+//When True leads a comparison with the LOGICAL OR (||) operand, it is always true
+var found = true;
+var result = (found || someUndeclaredValue);
+alert(result);
+
+//The MDAS functions act accordingly, but the addition operator WITH PARENTHESES can be used to concatenate items
+ var num1= 5;
+ var num2= 10;
+var message = "The sum of 5 and 10 is " + (num1 + num2);
+
+//Relational Operators < , > , === , == , >= , <= can have interesting results with strings
+var result = "Brick".toLowerCase() < "alphabet".toLowerCase(); //Correct strings to all lower or all upper and then test
+
+//Equality Operators test values for identicality but when objects come into play they are converted to like types 
+// == returns true for 2 identicals, != returns true for non-identicals
+// === is the identically equal operator, and only returns true if the two operands are equal w/o conversion
+var result1 = ("55" == 55);//Equal by conversion
+var result2 = ("55" === 55);//Not Equal by data types
+
+//The !== operator hold true for values that cannot be equal post conversion
+var result1 = ("55" != 55);//Equal by conversion, false
+var result2 = ("55" !== 55);//Not Equal by conversion, true
+
+Use !== and === because they protect data integrity!!!!
+
+
+!!!!!!!!!!!!!
+The Conditional Operator allows conditional assignments to a variable depending on the evaluation of the boolean expression (comparison of values to return true or false)
+
+var test = boolean_expression ? true_value : false_value;
+
+var max = (num1 > num2) ? num1 : num2;//True assigns true_value to the var max, false vice-versa
+
+
+!!!!!!!!!!!!!
+
+/* Assignment operators have compound assignments to them */
++= , -= , *= , /= , &= //These are short hand notations for 'do the mathematical and assign'
+
+//The comma (,) operator allows for more than one execution in a single statement
+var num1 = 1, num2 = 2, num3 = 3;
+var num = (5, 1 ,34, 2); // num reverts to last stated becomes 2
+
+/* STATMENTS -- Flow Control */
+
+//The IF statement
+if (condition) {statement1;} else {statment2;} //Condition can be any expression, doesn't have to evaluate to an actual boolean do to the Boolean() casting
+
+if (i > 25) {
+	alert("Greater than 25.");
+} else{
+	alert("Less than or equal to 25.");
+}
+
+//Chains -- IF statments can be chained together 
+
+if (condition1) {statement} else if (condition2) {statement2} else{statement3}
+
+if (i > 25) {
+	alert("Greater than 25.");
+} else if (i < 0) {
+	alert("Less than 0.");
+} else{
+	alert("Between 0 and 25, inclusive.");
+}
+
+//The Do-While Statement is a POST-TEST LOOP. The escape condition is evaluated only after the code inside the loop has been executed.DO WHILE BODY IS ALWAYS EXECUTED ONCE
+do {
+	statement
+} while (expression);
+
+var i = 0;
+do {
+	console.log(i); //console.log needs to be called early in the function -- next line after operation call
+	i += 2;
+} while (i < 10); //This code defines a var i that, while i is less than 10, adds 2 and prints to the console--always executing ONCE
+
+
+//The While statement is a PRE-TEST Loop 
+
+while(expression) statement
+
+var i = 0; //Because of its evaluation method, if this var satisfies the test expression, the operation may not run at all
+while (i < 10) {
+	console.log(i); //This code defines a variable i that, while it is below 10, adds 2 and prints to the console
+	i += 2;
+}
+
+//The FOR Statment is another PRE-TEST loop with added capabilities of variable initialization before entering the loop and defining postloop code to be executed
+
+for(initialization; expression; post-loop expression) statement
+
+var count = 10;
+for (var i = 0; i < count; i++) { //This code defines a var i that, as long as it is below 10, will increase by 1 and print to the console but will not print the value 10--
+	console.log(i);				 //The for loop will not enter if i < count evaluates to true
+}
+
+Can be rewritten as 
+
+
+var count = 10; 
+var i; //Here we have created the i var outside of the for loop so it is accessible outside the loop
+for (i = 0; i < count; i++) {
+	console.log(i); //Note that console.log will not print 10 but alert(i);} alert(i); will because the var is accessible outside the loop
+}
+
+//Including only the control expression effectively turns a FOR loop into a WHILE loop
+
+var count = 10; 
+var i = 0; //Here we have created the i var outside of the for loop so it is accessible outside the loop
+for (;i < count;) {
+	alert(i);
+	i++;
+}
+
+FOR is a very versatile statement! Anything done with the for loop can be done with a while loop, just cleaner.
+
+//The FOR-IN Statement is a STRICT ITERATIVE statement. It is used to enumaerate the properties of an object
+
+for(property in expression) statement
+
+for (var propName in window) {
+	document.write(propName);
+}
+
+//Labeled Statments -- statements for later use within a a nested loop using the break or continue statment
+label: statement
+
+start: for (var i=0; i < count; i++) { //start can now be used later to do this operation
+	alert(i);
+}
+
+/* The BREAK and CONTINUE Statements  -- provide stricter control over he execution of code in a loop. */
+//Break exits the loop immediately, forcing execution to continue with the next statment after the loop
+
+var num = 0;
+for(var i=1; i < 10; i++) {
+	if (i % 5 == 0) { //increments i and checks the modulous of 5 and if it returns something other than 0 it quits the loop and increments by 1
+		break;
+	}
+	num++ 
+}
+alert(num); //this loop only runs to i = 4 b/c i = 5%5 gives us 0, it broke out of the loop once it hit that threshold.
+
+//Continue forces execution after satisfaction
+
+var num = 0;
+for(var i=1; i < 10; i++) {
+	if (i % 5 == 0) { //increments i and checks the modulous of 5 but continues until i = 10 (num = 8, bc one iteration did not occur)
+		continue;
+	}
+	num++ 
+}
+alert(num);
+
+//Both Break and Continue can be used in conjunction with labeled statements to return to a particular location
+var num = 0;
+
+outermost:
+for (var i = 0; i < 10; i++) {
+	for (var j = 0; j < 10; j++) {
+		if (i == 5 && j == 5) {
+			break outermost;
+		}
+		num++;
+	}
+}
+
+alert(num); // 55
+
+//The Switch Statement, closely related to the IF statement, is another flow-control statment adopeted from other languages
+switch (expression) {
+	case value: statment //If the expression is equal to the value, execute the statement--the default keywor indicates what is to be done if the expression does not evaluate
+		break;
+	case value: statment //Break statements keep the code block from evaluating all scenarios
+		break;
+	case value: statment
+		break;
+	case value: statment //Switch statements prevent devs from having to write verbose if else if statements
+		break;
+	default: statment
+}
+
+switch (i) { 
+	case 25: 
+		alert("25");
+		break;
+	case 35: 
+		alert("35");
+		break;
+	case 45: 
+		alert("45");
+		break;
+	default: 
+		alert("Other");
+}
+
+var num = 15;
+switch (true) { //Switch Statements can be used with strings and even objects
+	case num < 0: 
+		alert("Less than 0.");
+		break;
+	case num >= 0 && num <= 10: 
+		alert("Betweeb 0 and 10.");
+		break;
+	case num > 10 && num <= 20: 
+		alert("Between 10 and 20.");
+		break;
+	default: 
+		alert("More than 20.");
+}
