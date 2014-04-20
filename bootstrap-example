@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<title>Practice Makes 'Better'</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="viewport" content="initial-scale=1">
+
+	<link rel="stylesheet" href="/obed/css/bootstrap/css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="/obed/css/bootstrap/css/bootstrap-responsive.css">
+
+	<style type="text/css">
+
+		html{
+
+			
+		}
+
+		body{
+
+			margin: 0;
+			padding: 0;
+			background-color: #b4bec3;
+			color: white;
+			height: 100%;
+		}
+
+		.hero-unit{
+
+			background-color: ;
+		}
+
+		ul.nav nav-list{
+
+			background-color: black;
+		}
+		li a{
+
+			color: white;
+		}
+		#contact{
+
+			background-color:;
+			height: 300px;
+			margin-top: 40px;
+		}
+		footer{
+
+			float:bottom;
+			clear:both;
+		}
+		
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<div class="container" style=" margin: 0 auto; text-align: center;
+  	box-shadow: 0 0 15px #111; margin-top:42px; background-color: #b0bfd2;">
+
+	<div class="navbar navbar-fixed">
+
+		<div class="navbar-inner">
+
+			<div class="container">
+
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+					<span class="icon-th-list"></span>
+
+				</a>
+				<a href="#" class="brand">Obed Ampah</a>
+
+				<div class="nav-collapse collapse">
+
+					<ul class="nav pull-right">
+
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#contact">Contact</a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="row-fluid" style="width: 100%; background-color: black;">
+
+		<div class="span6">
+
+			<img src="/obed/images/MilkyWay.jpg" class="img-square " height="25%" width="100%" style="margin-top: 50px;">
+
+		</div>
+
+
+		<div class="span5">
+
+			<h4><em>"Work Smarter, Not Harder" is just a way to say: Spend your time wisely</em></h4>
+
+			<ul class="nav nav-list">
+
+				<li class="divider"></li>
+				<li><p>Welcome to my page, I hope you find what you're looking for. Please don't hesitate to contact me with any questions you may have or projects you need help with.</p></li>
+
+
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="container" id="about" style="margin-top: 5em;">
+
+		<div class="row-fluid">
+
+			<div class="span8">
+
+
+				<div class="row-fluid">
+
+					<div class="span4">
+
+						<h4>Resume</h4>
+						<p>We don't waste time</p>
+						<a href="#" class="btn btn-success btn-medium"><i class="icon-home icon-white"></i> Ask our clients</a>
+
+					</div>
+					<div class="span4">
+
+						<h4>Helpful</h4>
+						<p>Any time of the day, contact me</p>
+						<a href="#" class="btn btn-success btn-medium">Get in touch</a>
+
+
+					</div>
+					<div class="span4">
+
+						<h4>Helpful</h4>
+						<p>Any time of the day, contact me</p>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="span4">
+
+					<ul class="nav nav-list">
+
+						<li class="nav-header">My services</li>
+						<li><a href="#">Web Development</a></li>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Social Media Monitoring</a></li>
+						<li><a href="#">Business Development</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Want More?</a></li>
+
+
+					</ul>
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="container" id="contact" style="margin-top: 5em; width: 100%; height: 400px; background-color: black;"><h2>Contact Me</h2>
+
+		    <form class="well-inverse span8">
+
+			    <div class="row">
+
+				    <div class="span3">
+
+					    <label>First Name</label>
+					    <input type="text" class="span3" placeholder="Your First Name">
+
+					    <label>Last Name</label>
+					    <input type="text" class="span3" placeholder="Your Last Name">
+
+					    <label>Email Address</label>
+					    <input type="text" class="span3" placeholder="Your email address">
+
+					    <label>Subject</label>
+
+					    	<select id="subject" name="subject" class="span3">
+
+						    <option value="na" selected="">Choose One:</option>
+						    <option value="service">Web Dev</option>
+						    <option value="suggestions">Questions</option>
+						    <option value="product">Project Support</option>
+
+					    	</select>
+
+					</div>
+
+					    <div class="span5">
+
+						    <label>Message</label>
+						    <textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+
+					    </div>
+
+				    <button type="submit" class="btn btn-success pull-right">Send</button>
+
+			    </div>
+
+		    </form>
+
+	</div>
+
+</div>
+
+	<div><footer class="text-center">Copyright &copy; 2013</footer></div>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/obed/css/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
