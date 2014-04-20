@@ -1,0 +1,113 @@
+<cfif isDefined("formSubmitted")>
+
+<!--A query to insert in the db when formSubmitted-->
+<cfquery name="books" datasource="booklist">
+
+	INSERT INTO books
+			(
+				isbn, author, title
+			)
+			VALUES
+			(
+
+				<cfqueryparam cfsqltype="cf_sql_bigint" value="#form.isbn#">,
+				<cfqueryparam cfsqltype="cf_sql_varchar" value="#form.author#">,
+				<cfqueryparam cfsqltype="cf_sql_varchar" value="#form.title#">	
+			)
+
+</cfquery>
+</cfif>
+<!doctype html>
+<html>
+	<head>
+		<title>RIF.cfm</title>
+
+		<!--<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">-->
+		<!--[if lt IE 9]>
+		<script src="dist/html5shiv.js"></script>
+		<![endif]-->
+		
+		<link type="text/css" rel="stylesheet" href="/css/rif.css"/>
+		<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-responsive.css">
+
+    
+	
+	
+	</head>
+	<body>
+
+		<script>
+		  $(document).ready(function(){
+		    $("#id").validate();
+		  });
+		  </script>
+  		
+
+		<div id="main" class="container-fluid"> 
+
+			<div id="columns" class="row-fluid"> 	
+
+				<!--Basic html form that can be used to submit book data-->
+				<div id="second">
+					
+					
+						<form action="rif.cfm" id="id" method="post">
+
+							<h2>Enter your book information:</h2>
+
+								<div id="input" class="container-fluid span12 pull-left">
+									<input type="hidden" name="id" value="#id#">
+									ISBN:<input type="text" name="isbn" maxsize="13" required="">
+									TITLE:<input type="text" name="title" maxsize="100" required="">
+									AUTHOR:<input type="text" name="author" maxsize="50" required="">
+									<input type="submit" name="formSubmitted" value="Submit">
+								</div>
+							
+						</form>
+				
+				</div>
+
+				<cfquery name="read" datasource="booklist">
+				SELECT * FROM books
+				</cfquery>
+
+
+
+				<div id="table" class="container-fluid">
+					<table cellpadding="8" class="container-fluid" >
+					<tr>
+					    <th>id</th>
+					    <th>isbn</th>
+					    <th>title</th>
+					    <th>author</th>
+					</tr>
+
+					<cfoutput query="read">
+						<tr>
+						    <td><a href="delete.cfm?id=#read.id#">#read.id#</a></td>
+						    <td><a href="update.cfm?id=#read.id#">#read.isbn#</a></td>
+						    <td>#read.title#</td>
+						    <td>#read.author#</td>
+						</tr>
+					</cfoutput>
+
+					</table>
+
+				</div>
+
+			</div>
+			
+			<div style="clear: both;">&nbsp;</div>
+
+			<script type="text/javascript" src="js/less-1.0.41.min.js"></script>
+			<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+		</div>
+	</body>
+</html>
