@@ -287,3 +287,105 @@ switch (true) { //Switch Statements can be used with strings and even objects
 	default: 
 		alert("More than 20.");
 }
+
+//When DI struck me
+
+define(['jquery'] , function ($){
+
+	return function () {};
+});
+
+/*
+	
+	Does not have to be jquery as dependencies can have many filepaths
+*/
+
+define(['dep1','dep2','dep3'], function (dep1, dep2, dep3) {
+	
+	return function () {};
+});
+
+// Register the factory function by calling define(), instead of immediately executing it
+
+// Pass dependencies as an array of string values, do not grab globals
+
+// Only execute the factory function once all the dependencies have been loaded and executed
+
+// Pass the dependent module as arguments to the factory function
+
+/**
+	
+	Named Modules: Asycrhonous Module Definition (AMD) API Supported by Require.js
+	
+	Notice that the above module does not declare a name for itself. This is what makes the module very portable. It allows a developer to place the module in a different path to give it a different ID/name
+
+**/
+
+//Caling define with module ID, dependency array, and factory function
+define('myModule',['dep1','dep2'], function (dep1, dep2) {
+	
+	return function () {};
+});
+
+// The AMD loader will parse out the require(")calls by F(x).prototype.toString()
+
+define(function (require) {
+	
+	var dependency1 = require('dependency1'),
+		dependency2 = require('dependency2');
+		
+	return function () {};
+});
+
+// This allows loader to load dep1 and dep2 asynchronously, execute those dependencies, then execute the above define call
+
+// An example of simplified CommonJS wrapping
+
+define(function (require, exports, module) {
+	
+	var a = require('a'),
+		b = require('b');
+		
+	exports.action = function () {};
+});	
+
+
+//Definition functions with dependencies
+
+// Example: the my/shirt.js module
+
+// myc/cart.js
+// my/inventory.js
+// my/shirt.js
+
+// Does not exist as a global
+
+define(["./cart", "./inventory"], function (cart, inventory) {
+	
+		return {
+			color: "black",
+			size: "unsize",
+			addToCart: function () {
+				inventory.decrement(this);
+				cart.add(this);
+			}
+		}
+	}
+
+);
+
+// Definition of a module as a F(x)
+
+define( ['./cart','./inventory'], function (cart, inventory) {
+	
+		return function (title) {
+			retrun title ? (window.title = title) :	inventory.storeName + '' + cart.name;	
+		}
+	}
+
+);
+
+
+// require.js has an optimization tool that has CommonJS wrapping 
+
+define(['a','b'], function (a, b) {} );
